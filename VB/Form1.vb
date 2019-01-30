@@ -18,9 +18,7 @@ Namespace summary
 		End Sub
 
 		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
-			' TODO: This line of code loads data into the 'carsDBDataSet.Cars' table. You can move, or remove it, as needed.
-			Me.carsTableAdapter.Fill(Me.carsDBDataSet.Cars)
-
+			gridControl1.DataSource = CarList.GetList()
 		End Sub
 
 		Private counter As Integer
